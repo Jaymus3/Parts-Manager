@@ -31,7 +31,8 @@ public class Main {
     			i++;
     			continue;
     		}
-    		String conditions = null;
+    		@SuppressWarnings("unused")
+			String conditions = null;
     		String[] splitparts = parts[i].split(" ");
     		if(splitparts.length > 1)
     		{
@@ -112,21 +113,6 @@ public class Main {
 			r.mouseRelease(InputEvent.BUTTON1_MASK);
     		i++;
     	}
-        /*
-        keyboard.type("238-02942\n");  //Enters part number and waits for the program to load.
-        keyboard.type("\t1\tG03024\t\t\t\t\t");  //Enters stock number and store 1 as location.
-        keyboard.type("60\t\t\t\t\t\t\tY\t\t\nEAST\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n");  //Types price, sets
-        														// it to Y location, EAST, and finishes the entry.
-        keyboard.type("253-00276\n");  //Enters part number and waits for the program to load.
-        keyboard.type("\t1\tG03024\t\t\t\t\t");  //Enters stock number and store 1 as location.
-        keyboard.type("40\t\t\t\t\t\t\tY\t\t\nEAST\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n");  //Types price, sets
-        														// it to Y location, EAST, and finishes the entry.
-        keyboard.type("253-00279\n");  //Enters part number and waits for the program to load.
-        keyboard.type("\t1\tG03024\t\t\t\t\t");  //Enters stock number and store 1 as location.
-        keyboard.type("40\t\t\t\t\t\t\tY\t\t\nEAST\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n");  //Types price, sets
-        														// it to Y location, EAST, and finishes the entry.
-        	//After 2nd tab on 3rd keyboard type is where you put conditions.  e.g. 35\t\tscratches\t\t\t\t
-        	 */
     }
 
 }
